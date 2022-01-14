@@ -22,16 +22,28 @@
         <form class="form" id="form">
             <div class="form__field">
                 <label for="email">Para:</label>
-                <input id="email" type="email">
+                <input id="email" type="email" class="inputCampo">
             </div>
             <div class="form__field">
                 <label for="asunto">Asunto:</label>
-                <input id="asunto" type="text">
+                <input id="asunto" type="text" class="inputCampo">
             </div>
             <div class="form__field">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje"></textarea>
+                <textarea id="mensaje" class="inputCampo"></textarea>
             </div>
+
+            <div id="spinner" class="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+
             <div class="form__buttons">
                 <button id="enviar" type="submit" class="form__btn" >
                     <p>Enviar</p>
@@ -43,7 +55,7 @@
                         </svg>
                     </i>
                 </button>
-                <button id="resetBtn" type="submit" class="form__btn">
+                <button id="resetBtn" type="button" class="form__btn">
                     <p>Resetear Form</p>
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -57,6 +69,7 @@
                     </i>
                 </button>
             </div>
+
         </form>
     </main>
     <script src="./app.js"></script>

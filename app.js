@@ -96,7 +96,7 @@ function enviarEmail(e){
         spinner.style.display = 'none';
 
         const mensajeEnviado = document.createElement('p');
-        mensajeEnviado.textContent = 'El emali se envio correctamente.';
+        mensajeEnviado.textContent = 'Email enviado!';
         mensajeEnviado.classList.add('mensajeEnviado');
 
         // Insertar el parrafo
